@@ -20,8 +20,8 @@ jobs:
           DOCKERHUB_USERNAME: ${{ secrets.saravanadatta }}
           IMAGE_NAME: my-image
         run: |
-          docker build -t $saravanadatta/$IMAGE_NAME .
-          docker push $saravanadatta/$IMAGE_NAME:latest
+          docker build -t $saravanadatta/$my-image .
+          docker push $saravanadatta/$my-image:latest
 
   test:
     runs-on: ubuntu-latest
